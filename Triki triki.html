@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>TRIKI TRIKI</h2>
+<p><strong>Escriba X o 0 para dar valor al boton que presione</strong></p>
+
+<input type="text" id="value"><br><br>
+
+<input onclick="changeBtn1()" type="button" value="  " id="myButton1">
+<input onclick="changeBtn2()" type="button" value="  " id="myButton2">
+<input onclick="changeBtn3()" type="button" value="  " id="myButton3"><br>
+<input onclick="changeBtn4()" type="button" value="  " id="myButton4">
+<input onclick="changeBtn5()" type="button" value="  " id="myButton5">
+<input onclick="changeBtn6()" type="button" value="  " id="myButton6"><br>
+<input onclick="changeBtn7()" type="button" value="  " id="myButton7">
+<input onclick="changeBtn8()" type="button" value="  " id="myButton8">
+<input onclick="changeBtn9()" type="button" value="  " id="myButton9"><br><br>
+
+<script type="text/javascript">
+
+function disabledButtons(){
+	document.getElementById("myButton1").disabled = true
+    document.getElementById("myButton2").disabled = true
+    document.getElementById("myButton3").disabled = true
+    document.getElementById("myButton4").disabled = true
+    document.getElementById("myButton5").disabled = true
+    document.getElementById("myButton6").disabled = true
+    document.getElementById("myButton7").disabled = true
+    document.getElementById("myButton8").disabled = true
+    document.getElementById("myButton9").disabled = true
+}
+
+function changeBtn1(){
+	if(document.getElementById("value").value == "x" || 			                	   document.getElementById("value").value == "0"){
+
+		document.getElementById("myButton1").value = 			                     		document.getElementById("value").value
+    
+		if(document.getElementById("myButton2").value == "x" &&			            			document.getElementById("myButton3").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+
+    	if(document.getElementById("myButton2").value == "0" &&			             			document.getElementById("myButton3").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}   
+        
+        if(document.getElementById("myButton4").value == "x" &&			            			document.getElementById("myButton7").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton4").value == "0" &&			             			document.getElementById("myButton7").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	} 
+        
+        if(document.getElementById("myButton4").value == "x" &&			            			document.getElementById("myButton7").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton5").value == "x" &&			            			document.getElementById("myButton9").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton5").value == "0" &&			             			document.getElementById("myButton9").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}  
+
+
+	}else{
+		alert("tiene que ingresar un valor valido: X o 0 para jugar")
+	}
+}
+
+function changeBtn2()
+{
+	if(document.getElementById("value").value == "x" || 			                	   document.getElementById("value").value == "0"){
+
+		document.getElementById("myButton2").value = 			                     		document.getElementById("value").value
+    
+		if(document.getElementById("myButton1").value == "x" &&			            			document.getElementById("myButton3").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+
+    	if(document.getElementById("myButton1").value == "0" &&			             			document.getElementById("myButton3").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}
+        
+        if(document.getElementById("myButton5").value == "x" &&			            			document.getElementById("myButton8").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton5").value == "0" &&			             			document.getElementById("myButton8").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}
+
+	}else{
+		alert("tiene que ingresar un valor valido: X o 0 para jugar")
+	}
+}
+
+function changeBtn3(){
+	if(document.getElementById("value").value == "x" || 			                	   document.getElementById("value").value == "0"){
+
+		document.getElementById("myButton3").value = 			                     		document.getElementById("value").value
+    
+		if(document.getElementById("myButton2").value == "x" &&			            			document.getElementById("myButton1").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+
+    	if(document.getElementById("myButton2").value == "0" &&			             			document.getElementById("myButton1").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}  
+        
+        if(document.getElementById("myButton6").value == "x" &&			            			document.getElementById("myButton9").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton6").value == "0" &&			             			document.getElementById("myButton9").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}  
+        
+        if(document.getElementById("myButton5").value == "x" &&			            			document.getElementById("myButton7").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton5").value == "0" &&			             			document.getElementById("myButton7").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}  
+
+	}else{
+		alert("tiene que ingresar un valor valido: X o 0 para jugar")
+	}
+}
+
+function changeBtn4(){
+	if(document.getElementById("value").value == "x" || 			                	   document.getElementById("value").value == "0"){
+
+		document.getElementById("myButton4").value = 			                     		document.getElementById("value").value
+    
+		if(document.getElementById("myButton5").value == "x" &&			            			document.getElementById("myButton6").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+
+    	if(document.getElementById("myButton5").value == "0" &&			             			document.getElementById("myButton6").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}   
+        
+        if(document.getElementById("myButton1").value == "x" &&			            			document.getElementById("myButton7").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton1").value == "0" &&			             			document.getElementById("myButton7").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	} 
+
+	}else{
+		alert("tiene que ingresar un valor valido: X o 0 para jugar")
+	}
+}
+
+function changeBtn5(){
+	if(document.getElementById("value").value == "x" || 			                	   document.getElementById("value").value == "0"){
+
+		document.getElementById("myButton5").value = 			                     		document.getElementById("value").value
+    
+		if(document.getElementById("myButton4").value == "x" &&			            			document.getElementById("myButton6").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+
+    	if(document.getElementById("myButton4").value == "0" &&			             			document.getElementById("myButton6").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}   
+        
+        if(document.getElementById("myButton2").value == "x" &&			            			document.getElementById("myButton8").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton2").value == "0" &&			             			document.getElementById("myButton8").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}  
+        
+        if(document.getElementById("myButton1").value == "x" &&			            			document.getElementById("myButton9").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton1").value == "0" &&			             			document.getElementById("myButton9").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}  
+
+	}else{
+		alert("tiene que ingresar un valor valido: X o 0 para jugar")
+	}
+}
+
+function changeBtn6(){
+	if(document.getElementById("value").value == "x" || 			                	   document.getElementById("value").value == "0"){
+
+		document.getElementById("myButton6").value = 			                     		document.getElementById("value").value
+    
+		if(document.getElementById("myButton4").value == "x" &&			            			document.getElementById("myButton5").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+
+    	if(document.getElementById("myButton4").value == "0" &&			             			document.getElementById("myButton5").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}  
+        
+        if(document.getElementById("myButton6").value == "x" &&			            			document.getElementById("myButton9").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton6").value == "0" &&			             			document.getElementById("myButton9").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}  
+
+	}else{
+		alert("tiene que ingresar un valor valido: X o 0 para jugar")
+	}
+}
+
+function changeBtn7(){
+	if(document.getElementById("value").value == "x" || 			                	   document.getElementById("value").value == "0"){
+
+		document.getElementById("myButton7").value = 			                     		document.getElementById("value").value
+    
+		if(document.getElementById("myButton8").value == "x" &&			            			document.getElementById("myButton9").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+
+    	if(document.getElementById("myButton8").value == "0" &&			             			document.getElementById("myButton9").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}
+        
+        if(document.getElementById("myButton3").value == "x" &&			            			document.getElementById("myButton5").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton5").value == "0" &&			             			document.getElementById("myButton3").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	} 
+        
+        if(document.getElementById("myButton4").value == "x" &&			            			document.getElementById("myButton1").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton1").value == "0" &&			             			document.getElementById("myButton4").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	} 
+
+	}else{
+		alert("tiene que ingresar un valor valido: X o 0 para jugar")
+	}
+}
+
+function changeBtn8(){
+	if(document.getElementById("value").value == "x" || 			                	   document.getElementById("value").value == "0"){
+
+		document.getElementById("myButton8").value = 			                     		document.getElementById("value").value
+    
+		if(document.getElementById("myButton7").value == "x" &&			            			document.getElementById("myButton9").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+
+    	if(document.getElementById("myButton7").value == "0" &&			             			document.getElementById("myButton9").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}
+        
+        if(document.getElementById("myButton2").value == "x" &&			            			document.getElementById("myButton5").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton2").value == "0" &&			             			document.getElementById("myButton5").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}
+
+	}else{
+		alert("tiene que ingresar un valor valido: X o 0 para jugar")
+	}
+}
+
+function changeBtn9(){
+	if(document.getElementById("value").value == "x" || 			                	   document.getElementById("value").value == "0"){
+
+		document.getElementById("myButton9").value = 			                     		document.getElementById("value").value
+    
+		if(document.getElementById("myButton8").value == "x" &&			            			document.getElementById("myButton7").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+
+    	if(document.getElementById("myButton8").value == "0" &&			             			document.getElementById("myButton7").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}
+        
+        if(document.getElementById("myButton3").value == "x" &&			            			document.getElementById("myButton6").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton3").value == "0" &&			             			document.getElementById("myButton6").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}
+        
+        if(document.getElementById("myButton1").value == "x" &&			            			document.getElementById("myButton5").value == "x" ){
+        	disabledButtons()
+           	alert("Ha ganado el jugador x")
+    	}
+        
+        if(document.getElementById("myButton1").value == "0" &&			             			document.getElementById("myButton5").value == "0"){
+        	disabledButtons()
+    		alert("Ha ganado el jugador 0")
+    	}
+
+	}else{
+		alert("tiene que ingresar un valor valido: X o 0 para jugar")
+	}
+}
+
+function reiniciar(){
+	document.getElementById("myButton1").value = "  "
+	document.getElementById("myButton2").value = "  "
+	document.getElementById("myButton3").value = "  "
+	document.getElementById("myButton4").value = "  "
+	document.getElementById("myButton5").value = "  "
+	document.getElementById("myButton6").value = "  "
+	document.getElementById("myButton7").value = "  "
+	document.getElementById("myButton8").value = "  "
+	document.getElementById("myButton9").value = "  "
+    
+    document.getElementById("myButton1").disabled = false
+    document.getElementById("myButton2").disabled = false
+    document.getElementById("myButton3").disabled = false
+   	document.getElementById("myButton4").disabled = false
+    document.getElementById("myButton5").disabled = false
+    document.getElementById("myButton6").disabled = false
+    document.getElementById("myButton7").disabled = false
+    document.getElementById("myButton8").disabled = false
+    document.getElementById("myButton9").disabled = false
+}
+
+</script>
+
+<input onclick="reiniciar()" type="button" value="Reiniciar" id="buttonReiniciar">
+
+</body>
+</html>
